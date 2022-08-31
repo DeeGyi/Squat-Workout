@@ -1,2 +1,1 @@
 # Squat-Workout
-# Squat-Workout
