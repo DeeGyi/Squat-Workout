@@ -1,8 +1,6 @@
 # Squat-Workout
-
-<<<<<<< HEAD
-![Heruko](https://squat-workouts.herokuapp.com/squats)
-![Lucid CRUD](https://lucid.app/lucidchart/af5dfe68-4b81-4f57-a4b9-b0578cbe954f/edit?invitationId=inv_fd970e4b-eebd-48fe-924e-1ef7e487cd6e#)
+* [Heruko](https://squat-workouts.herokuapp.com/squats)
+* [Lucid CRUD](https://lucid.app/lucidchart/af5dfe68-4b81-4f57-a4b9-b0578cbe954f/edit?invitationId=inv_fd970e4b-eebd-48fe-924e-1ef7e487cd6e#)
 
 
 > This is a ReadMe template to help save you time and effort.
@@ -57,15 +55,3 @@ You're sections headers will be used to reference location of destination.
 [Back To The Top](#read-me-template)
 
 ---
-=======
-https://lucid.app/lucidchart/af5dfe68-4b81-4f57-a4b9-b0578cbe954f/edit?invitationId=inv_fd970e4b-eebd-48fe-924e-1ef7e487cd6e#
-
-
-Technology
-HTML
-CSS
-JS
-MongoDB
-NodeJS
-
->>>>>>> 540470f37ee58382b2f5344f13109f48b6d7d696
