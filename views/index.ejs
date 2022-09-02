@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <title>Squat Workout</title>
+    
+</head>
+
+<header>
+  <h2 style="color: white">Squat Workouts</h2>
+  <nav>
+    
+<div class="nav-container">
+  <ul class="nav-link">
+    <li><a href="/squats">Home</a></li>
+    <li><a href="/squats/workouts">Workouts</a></li>
+<li class="dropdown">
+  <button class="dropbtn" style="padding: 10px;">Account</a>
+<div class="dropdown-content">
+    <li><a href="squats/user">User</a></li>
+    <li><a href="/auth/google">Log In</a></li> 
+</div>
+</li>
+</ul>
+</div>
+</nav>
+
+</header>
+<body>
+   
+
+    
+    <p class="text-2"> “When people tell me they can’t afford to join a gym, I tell them to go outside; planet Earth is a gym and we’re already members. Run, climb, sweat, and enjoy all of the natural wonder that is available to you.”<br>
+      <br>―&nbsp;Steve Maraboli,&nbsp;Unapologetically You: Reflections on Life and the Human Experience
+    </p>
+    
+    <div class="content" style="max-width:800px">
+      <img class="mySlides" src="https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/Strong-man-doing-pistol-squat-exercise-one-leg-squat.jpg" style="width:120%">
+      <img class="mySlides" src="https://www.focusfitness.net/stock-photos/wp-content/uploads/edd/2017/06/Fitness-woman-doing-squats-in-white-backgroud.jpg" style="width:120%">
+      <img class="mySlides" src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/14/2021/03/squat-alamy-1220x687.jpg" style="width:120%">
+    </div>
+    
+    <div class="center">
+      <div class="section">
+        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+      </div>
+      <button class="button demo" onclick="currentDiv(1)">1</button> 
+      <button class="button demo" onclick="currentDiv(2)">2</button> 
+      <button class="button demo" onclick="currentDiv(3)">3</button> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-red", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-red";
+    }
+    </script>
+    
+
+    </body>
+
+
+    
   </body>
 </html>

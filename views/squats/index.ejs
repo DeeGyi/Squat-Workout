@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+  <h2 style="color: white">Squat Workouts</h2>
+  <nav>
+    
+<div class="nav-container">
+  <ul class="nav-link">
+    <li><a href="/squats">Home</a></li>
+    <li><a href="/squats/workouts">Workouts</a></li>
+<li class="dropdown">
+  <button class="dropbtn" style="padding: 10px;">Account</a>
+<div class="dropdown-content">
+    <li><a href="squats/user">User</a></li>
+    <li><a href="/auth/google">Log In</a></li> 
+</div>
+</li>
+</ul>
+</div>
+</nav>
+
+</header>
+<body>
+<body>
+    
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <img class="mySlides" src="One_Leg_Square.jpg">
+    <p class="text"> Place your feet at shoulder width apart while keeping your chest up and your abdominals braced.<br>
+        <br>Begin the movement by swinging your arms up towards your shoulders. At the same time, bend at the knees and drive your hips back like you’re sitting in a chair.<br>
+        <br>Once your upper thighs are parallel with the ground, pause, then drive your hips forward to return to the starting position.<br>
+        <br>
+        <span style="font-size: 3.75rem;"> 30 <span style="font-size: 2.25rem;">squats&nbsp;&nbsp;<span style="font-size: 3.75rem;"> 3&nbsp;<span style="font-size: 2.25rem;"> reps</span>
+            </span>
+          </span>
+        </span>
+        <br>
+      </p>
+      <img class="mySlides" src="img_Jump_Squat.jpg">
+      <p class="text">Stand with your feet shoulder-width apart and your arms by your sides.<br>
+        <br>Keeping your torso upright, inhale as you squat down until your thighs are at least horizontal, and raise your arms horizontally in front of you.<br>Exhale as you jump as high as possible, making sure to throw your arms downward as you rise as if to push the floor downward.<br>
+        <br>When you land, flex your hips and knees to absorb the impact, and descend into another squat. Don’t forget to inhale.<br>Exhale as you jump as high as possible again.<br>Keep repeating the squat, then the jump.<br>
+        <span style="font-size: 3.75rem;"> 15&nbsp;<span style="font-size: 2.25rem;">squats&nbsp;&nbsp;<span style="font-size: 3.75rem;"> 3&nbsp;<span style="font-size: 2.25rem;"> reps</span>
+            </span>
+          </span>
+        </span>
+        <br>
+      </p>
+      <img class="mySlides" src="Air_Squat.jpg">
+      <p class="text"> Stand on one leg with your foot pointing straight ahead with the knee of the other leg slightly bent.<br>
+        <br>Perform the one-leg squat by hinging your hips back until your buttocks touch the box.<br>
+        <br>Push back up with your supporting leg to return to starting.<br>
+        <br>
+        <span style="font-size: 3.75rem;"> 20&nbsp;<span style="font-size: 2.25rem;">squats&nbsp;&nbsp;<span style="font-size: 3.75rem;"> 4&nbsp;<span style="font-size: 2.25rem;"> reps</span>
+            </span>
+          </span>
+        </span>
+        <br>
+      </p>
+      <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+      <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+      </script>
+</body>
+</html>
